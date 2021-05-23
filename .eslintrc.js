@@ -17,6 +17,15 @@ module.exports = {
     "plugins": [
         "react"
     ],
+    'extends': [
+        'plugin:react/recommended'
+    ],
     "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "varsIgnorePattern": "^[A-Z]"
+            }
+        ]
     }
 };
